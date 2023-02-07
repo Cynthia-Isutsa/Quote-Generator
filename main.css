@@ -1,6 +1,8 @@
 :root{
 --background: #525f70;
 --background1:#b9aaaa;
+--shadow:#d1a4a4;
+--after: #ffffff;
 
 
 }
@@ -14,12 +16,25 @@ body{
     background:var(--background);
 }
 .wrapper{
-    background: var(--background1);
-    border: 1px solid var(--background);
+    border: 1px solid white);
     width: 400px;
-   height: 400px;
     position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
+}
+.container{
+    width: 100%;
+    background-color: var(--background1);
+    padding: 50px 40px;
+    box-shadow: 0, 20px 65px var(--shadow);
+    position:relative;
+    border-radius: 5px;
+}
+.container:after{
+    content:"";
+    position: absolute;
+    width:80%;
+    background-color:var(--after) ;
+    height: 120%;
 }
