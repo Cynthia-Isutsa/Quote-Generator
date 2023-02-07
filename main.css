@@ -1,0 +1,25 @@
+:root{
+--background: #525f70;
+--background1:#b9aaaa;
+
+
+}
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background:var(--background);
+}
+.wrapper{
+    background: var(--background1);
+    border: 1px solid var(--background);
+    width: 400px;
+   height: 400px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
