@@ -16,7 +16,7 @@ body{
     background:var(--background);
 }
 .wrapper{
-    border: 1px solid white);
+    border: 1px solid white;
     width: 400px;
     position: absolute;
     transform: translate(-50%, -50%);
@@ -32,9 +32,11 @@ body{
     border-radius: 5px;
 }
 .container:after{
-    content:"";
+    content:""; 
     position: absolute;
     width:80%;
     background-color:var(--after) ;
     height: 120%;
+    z-index: -1;
+    top:-10%;
 }
